@@ -1,4 +1,5 @@
 @import url(font-awesome.min.css);
+@import url(http://weloveiconfonts.com/api/?family=iconicstroke|maki);
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 
 @font-face {
@@ -1634,4 +1635,12 @@
 			font-family: "All Modern Hand" !important;
 		}
 		
+		[class*="maki-"]:before {
+		  font-family: 'maki', sans-serif;
+		}
+		
+		[class*="iconicstroke-"]:before {
+		  font-family: 'IconicStroke', sans-serif;
+		}
+
 		
