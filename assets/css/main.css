@@ -1356,13 +1356,6 @@
 		position: relative;
 		cursor: default;
 	}
-	
-	.header-reception {
-		background-image: linear-gradient(
-                     rgba(20,20,20, .2), 
-                     rgba(20,20,20, .2)),
-					 url("../../images/banner-alt4.jpg") !important;
-	}
 
 		#header input, #header select, #header textarea {
 			color: #ffffff;
