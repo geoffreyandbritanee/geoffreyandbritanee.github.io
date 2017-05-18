@@ -41,11 +41,62 @@
   font-weight: normal;
   font-style: normal;
 }
-/*
-	Epilogue by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
+@font-face {
+	font-family: 'All Modern Hand';
+	src: url('fonts/AllModernHandbyKMontes-T.eot');
+	src: url('fonts/AllModernHandbyKMontes-T.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AllModernHandbyKMontes-T.woff') format('woff'),
+		url('fonts/AllModernHandbyKMontes-T.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'All Modern Hand Italic';
+	src: url('fonts/AllModernHandbyKMontes-I-Italic.eot');
+	src: url('fonts/AllModernHandbyKMontes-I-Italic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AllModernHandbyKMontes-I-Italic.woff') format('woff'),
+		url('Afonts/llModernHandbyKMontes-I-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'All Modern Hand Thin';
+	src: url('fonts/AllModernHandbyKMontes.eot');
+	src: url('fonts/AllModernHandbyKMontes.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AllModernHandbyKMontes.woff') format('woff'),
+		url('fonts/AllModernHandbyKMontes.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');
+    src: url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'),
+         url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
+         url('fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Proxima Nova Thin';
+    src: url('fonts/Mark Simonson - Proxima Nova Thin-webfont.eot');
+    src: url('fonts/Mark Simonson - Proxima Nova Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Mark Simonson - Proxima Nova Thin-webfont.woff2') format('woff2'),
+         url('fonts/Mark Simonson - Proxima Nova Thin-webfont.woff') format('woff'),
+         url('fonts/Mark Simonson - Proxima Nova Thin-webfont.ttf') format('truetype'),
+         url('fonts/Mark Simonson - Proxima Nova Thin-webfont.svg#proxima_nova_ltthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* Reset */
 
@@ -115,7 +166,7 @@
 	}
 
 	body {
-		background: #f4f4f4;
+		background: #fbfbfb !important;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -167,18 +218,20 @@
 
 		}
 
-	a {
-		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		text-decoration: none;
-		border-bottom: dotted 1px;
+	a:link {
+		color: #154371 !important;
+		font-family: "Proxima Nova";
+		text-transform: none;
+	}
+	
+	a:visited {
+		color: #154371 !important;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-		}
+	a:hover {
+		text-decoration: none;
+		color: #9c7c0b !important;
+	}
 
 	strong, b {
 		font-weight: 400;
@@ -189,7 +242,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+/*		margin: 0 0 2em 0;*/
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -211,6 +264,8 @@
 
 	h2 {
 		font-size: 1.75em;
+		font-family: "All Modern Hand";
+		letter-spacing: 0px;
 	}
 
 	h3 {
@@ -318,7 +373,7 @@
 	}
 
 		a:hover {
-			color: #EF6480 !important;
+			color: #edc016 !important;
 		}
 
 	strong, b {
@@ -455,14 +510,11 @@
 
 		}
 
-	input[type="submit"],
-	input[type="reset"],
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #666666;
-		color: #444444 !important;
+		background-color: #386794 !important;
+		color: #FFF !important;
 	}
 
 		input[type="submit"]:hover,
@@ -470,8 +522,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #EF6480 !important;
-			box-shadow: inset 0 0 0 2px #EF6480;
+/*			background-color: #edc016;*/
+			color: #000 !important;
 		}
 
 		input[type="submit"]:active,
@@ -662,50 +714,9 @@
 		color: #444444;
 	}
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		background: rgba(144, 144, 144, 0.075);
-		border-color: #666666;
-	}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		select:focus,
-		textarea:focus {
-			border-color: #EF6480;
-			box-shadow: 0 0 0 1px #EF6480;
-		}
 
 	.select-wrapper:before {
 		color: #666666;
-	}
-
-	input[type="checkbox"] + label,
-	input[type="radio"] + label {
-		color: #666666;
-	}
-
-		input[type="checkbox"] + label:before,
-		input[type="radio"] + label:before {
-			background: rgba(144, 144, 144, 0.075);
-			border-color: #666666;
-		}
-
-	input[type="checkbox"]:checked + label:before,
-	input[type="radio"]:checked + label:before {
-		background-color: #EF6480;
-		border-color: #EF6480;
-		color: #ffffff;
-	}
-
-	input[type="checkbox"]:focus + label:before,
-	input[type="radio"]:focus + label:before {
-		border-color: #EF6480;
-		box-shadow: 0 0 0 1px #EF6480;
 	}
 
 	::-webkit-input-placeholder {
@@ -756,14 +767,14 @@
 
 			.icon.major:before {
 				cursor: default;
-				font-size: 2.5rem;
-				box-shadow: inset 0 0 0 2px #666666;
+				font-size: 30pt;
+/*				box-shadow: inset 0 0 0 2px #666666;*/
 				width: 2.5em;
 				height: 2.5em;
 				line-height: 2.5em;
 				display: inline-block;
 				border-radius: 100%;
-				color: #666666;
+				color: #386794;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1306,6 +1317,7 @@
 
 				#wrapper > .main {
 					margin-bottom: 1em;
+					padding-bottom: 60px;
 				}
 
 		}
@@ -1332,9 +1344,12 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 8em 0 6em 0;
-		background-image: url("../../images/banner.jpg");
+		background-image: linear-gradient(
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .2)),
+					 url("../../images/banner.jpg");
 		background-size: cover;
-		background-position: center;
+		background-position: 50% 45%;
 		background-attachment: fixed;
 		text-align: center;
 		position: relative;
@@ -1423,10 +1438,11 @@
 			}
 
 			#header.alt p {
+				font-family: "All Modern Hand";
 				text-transform: uppercase;
 				letter-spacing: 0.325rem;
 				font-weight: 400;
-				font-size: 0.8em;
+				font-size: 12pt;
 				padding: 0 1.25em;
 			}
 
@@ -1507,7 +1523,7 @@
 /* Intro */
 
 	#intro {
-		padding: 4em 4em 2em 4em;
+		padding: 4em 4em 6em 4em;
 		background-color: #ffffff;
 		border-radius: 4px;
 		text-align: center;
@@ -1595,3 +1611,27 @@
 				}
 
 		}
+		
+		
+		.proposal-header {
+			font-family: "Caleigh";
+			text-transform: lowercase;
+			font-size: 40px;
+			margin-top: 20px;
+		}
+		
+		.body-text {
+			font-family: "Proxima Nova Thin";
+			font-size: 17px;
+		}
+		
+		.rsvp {
+			font-family: "All Modern Hand";
+			
+		}
+		
+		.bridal-name {
+			font-family: "All Modern Hand" !important;
+		}
+		
+		
