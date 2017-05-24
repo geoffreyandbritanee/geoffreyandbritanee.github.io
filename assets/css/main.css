@@ -1643,6 +1643,9 @@
 			font-family: "All Modern Hand" !important;
 		}
 		
+		.proposal-link {
+			font-family: "All Modern Hand" !important;
+		}
 		[class*="maki-"]:before {
 		  font-family: 'maki', sans-serif;
 		}
